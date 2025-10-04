@@ -1,0 +1,370 @@
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  
+  :root {
+    
+    --color-cocotech: #f1e2cc;
+  }
+  
+  
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f1e2cc;
+  align-items: center;
+  margin-top: 0;
+  justify-content: space-between;
+}
+
+nav ul {
+  justify-content: center;
+  left: 10px;
+    display: flex;
+  background: #f1e2cc;
+  display: flex;
+  align-items: center;
+  size: 10px;
+  gap: 30px;
+  /* espacio entre ellos */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li:hover .submenu {
+  display: block; /* se muestra al hacer hover */
+}
+
+nav ul li a {
+   display: block;
+  font-size: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+nav li { margin-left: 0; }   /* anula el 1cm solo dentro del menú */
+
+
+nav ul li {
+  position: relative; /* par el submenu */
+}
+
+nav ul li:hover .submenu {
+  display: block; /* aparece al pasar el mouse */
+}
+.submenu li a {
+  color: #333;
+  padding: 8px 12px;
+  display: block;
+}  
+
+
+li {
+  background: var(--color-cocotech);
+  list-style: none;
+  margin-left: 1cm;
+  font-style: italic;
+  
+}  
+
+.submenu {
+  display: none; /* oculto por defecto */
+  position: absolute;
+  top: 100%;   /* aparece debajo del li padre */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}    
+
+
+
+
+
+
+
+.submenu {
+  display: none; /* oculto por defecto */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.submenu li a {
+  padding: 8px 12px;
+  color: #333;
+}
+
+
+
+
+.emoji-pc::after {
+  content: "💻"
+  /* content: "🔧" */
+}
+
+/* .emoji-programacion::after {
+  
+
+} */
+
+.emoji-contacto::after {
+  content: " 📞"
+}
+
+
+body {
+  
+  font-family: Arial, sans-serif;
+  background: #f1e2cc;
+  line-height: 1.6;
+  background-color: #f8eee2;
+  
+  
+}
+
+.portada p {
+  margin: 20px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 5px;
+  text-align: justify;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: rgba(150, 85, 25, 0.411);
+  min-width: 300px;
+  max-width: 800px;
+  line-height: 1.5;
+  padding: 20px;
+  
+  
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: #964f19;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-contacto:hover {
+  background-color: #f1e2cc;
+  color: #333;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 52px;
+  margin: 20px 0;
+  color: #d77326;
+  text-shadow: 2px 2px #000000;
+}
+
+h1 span::before {
+  content: "_";
+  margin-right: 5px;
+}
+h3 span::before {
+  content: "_";
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+img {
+  width: 150px;
+  height: auto;
+  margin-left: 5px;
+  
+}
+
+h2 {
+    display: block;
+    font-size: 40px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+
+p {
+  margin: 125px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-radius: 10px;
+  text-align: justify;
+  /* más cómodo de leer */
+  color: #333;
+  font-size: 20px;
+  background-color: rgba(150, 85, 25, 0.411);
+  /* min-width: 300px; */
+  max-width: 800px;
+  /* más angosto, lectura fácil */
+  line-height: 1.5;
+  padding: 20px;
+  /* espacio interno */
+
+}
+
+
+
+
+.efecto-entrada{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portada {
+  background: url('img/IMAGE\ PORTADA.png') center/cover no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+    height: 415px;
+}
+
+
+
+
+.btn-cta:hover {
+  background-color: #f1e2cc;
+  color: #333;
+}
+
+.bungee-spice-regular {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.portada-imagen {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+footer ul li a {
+    font-size: 14px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;      
+  flex-wrap: wrap;               
+  background-color: rgb(0, 0, 0);
+  margin-top: 20px;
+  width: 100%;
+  padding: 40px;                
+  box-sizing: border-box;   
+  height: 1000PX;    
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 169px;
+    margin-right: 70px;
+}
+
+.emoji-footer{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+
+footer p {
+  margin-top: 175px ;
+  display: flex;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.fa-xl {
+  font-size: 19px;
+  line-height: 1.04167em;
+  vertical-align: -.125em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                 /* más espacio entre campos */
+  width: 100%;               /* que aproveche el ancho disponible */
+  max-width: 600px;          /* límite, no se estira demasiado */
+  color: white;
+  margin: 0 auto;            /* centrado */
+
+}
+form input,
+form select,
+form button {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}

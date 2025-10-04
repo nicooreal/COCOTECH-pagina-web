@@ -1,0 +1,99 @@
+.servicios {
+  padding: 40px 20px;
+  background-color: #f8eee2; /* igual que body */
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 28px;
+  color: #A46F43;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* separación entre cartas */
+}
+
+.card {
+  background-color: #fff;
+  border: 2px solid #A46F43;
+  border-radius: 12px;
+  width: 25%;
+  height: 25%;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(0,0,0,0.3);
+}
+
+.img-pair {
+  display: flex;
+  flex-direction: row; /* fotos una arriba de otra */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.img-pair img {
+  width: 48%;
+  height: 45%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+ padding: 10px 10px 10px 10px ;
+ margin-top: 10px ;
+ margin-bottom: 10px ; 
+ margin-left: 5px ;
+ margin-right: 5px ;
+
+ color: #333;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
